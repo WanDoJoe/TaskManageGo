@@ -20,7 +20,7 @@ func (this *UserController) Login(){
 	user.Logindateid=GetDateAndTime()
 	if err!=nil{
 		panic(err)
-	}
+	}  
 
 	use,error :=json.Marshal(user);
 	if error!=nil{
